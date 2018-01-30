@@ -1,0 +1,126 @@
+body{
+  background: #474747;
+  min-height: 100vh; /*viewport height det man kan se på skærmen*/
+  display: flex;
+  flex-direction: column; /*for at lægger kasserne rigtigt - flex ligger dem som standard ved siden af hinanden*/
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  background: #7d6a87;
+  font-family: 'Vollkorn SC', serif;
+}
+
+.header-content, .menu,
+ .content-area, .footer-content{
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.logo img {
+  display: block;
+  padding: 10px 0;
+  padding-right: 20px;
+  width: 156px;
+}
+
+.nav-bar, footer {
+  background: #594763;
+}
+
+.menu {
+  display: flex;
+
+}
+
+.nav-bar a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar a.active {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content-area {
+  background: #fff;
+  text-align: center;
+  font-size: 15px;
+}
+
+.content-area a {
+  color: #474747;
+}
+
+.content-wrapper {
+  flex: 1; /*udvider elementer så meget så muligt, i dette tilfælde ned af - normalt uad af*/
+  display: flex;
+}
+
+footer {
+  min-height: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-content a {
+  color: #fff;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.portfolio-post img {
+  width: 500px;
+}
+
+.portfolio-post {
+  border-bottom: #ccc 1px solid;
+  padding-bottom: 20px;
+}
+
+.portfolio-post:last-child {
+  border: 0;
+}
+
+p {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.image img {
+  align-items: center;
+  width: 200px;
+  padding-top: 20px;
+}
+
+.bobble img {
+  width: 400px;
+}
+
+.title {
+  margin: 0
+}
+
+.mail {
+  margin-top: 12px;
+}
